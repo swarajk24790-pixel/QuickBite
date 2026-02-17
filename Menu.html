@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="hero">
+
+    <!-- LOGO + BRAND NAME -->
+    <div class="brand">
+      <img src="logoname.png" alt="QuickBite Logo">
+      <ph5 style="color: yellow;">&#169; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~Order Food Online</h5>
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+      <a href="home.html">Home</a>
+      <a href="Menu.html">Menu</a>
+      <a href="Cart.html">Cart</a>
+      <a href="About.html">About</a>
+    </div>
+
+  </div>
+  <div class="menu-section">
+
+    <!-- PIZZAS -->
+    <section class="category">
+      <h2>Pizzas</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Classic cheese pizza.jpeg" alt="Classic Cheese Pizza">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Classic Cheese Pizza</h3>
+            <div class="price">₹199</div>
+          </div>
+
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Mozzarella cheese, rich pizza sauce, and soft baked pizza base.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Classic Cheese Pizza', 199)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Margerita pizza.jpeg" alt="Margherita Pizza">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Margherita Pizza</h3>
+            <div class="price">₹219</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Fresh mozzarella cheese, classic tomato sauce, and basil seasoning.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Margherita Pizza', 219)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Farm veggie pizza.jpeg" alt="Farm Veggie Pizza">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Farm Veggie Pizza</h3>
+            <div class="price">₹249</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Onion, capsicum, tomato, sweet corn, and melted cheese.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Farm Veggie Pizza', 249)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Paneer special.jpeg" alt="Paneer Special Pizza">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Paneer Special Pizza</h3>
+            <div class="price">₹269</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Soft paneer cubes, onion, capsicum, and spicy house sauce.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Paneer Special Pizza', 269)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Chicken Tikka pizza.jpeg" alt="Chicken Tikka Pizza">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Tikka Pizza</h3>
+            <div class="price">₹299</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Juicy chicken tikka, onion, capsicum, and mozzarella cheese.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Tikka Pizza', 299)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- BURGERS -->
+    <section class="category" id="burger">
+      <h2>Burgers</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Veg burger.jpeg" alt="Veg Burger">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Veg Burger</h3>
+            <div class="price">₹129</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Crispy veg patty, fresh lettuce, tomato, and creamy mayo.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Veg Burger', 129)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Cheese burger.jpeg" alt="Cheese Burger">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Cheese Burger</h3>
+            <div class="price">₹149</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Soft veg patty layered with cheese slice, onion, and creamy sauce.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Cheese Burger', 149)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Paneer burger.jpeg" alt="Paneer Burger">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Paneer Burger</h3>
+            <div class="price">₹169</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Grilled paneer patty with lettuce and spicy mayo in a soft bun.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Paneer Burger', 169)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Chicken burger.jpeg" alt="Chicken Burger">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Burger</h3>
+            <div class="price">₹189</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Juicy chicken patty with lettuce, cheese slice, and creamy mayo.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Burger', 189)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+    <!-- PASTAS -->
+    <section class="category" id="pasta">
+      <h2>Pastas</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="white sause pasta.jpeg" alt="White Sauce Pasta">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>White Sauce Pasta</h3>
+            <div class="price">₹199</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Creamy white sauce pasta cooked with herbs and fresh vegetables.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('White Sauce Pasta', 199)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="red sauce.jpeg" alt="Red Sauce Pasta">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Red Sauce Pasta</h3>
+            <div class="price">₹189</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Tangy tomato-based sauce blended with garlic and Italian seasoning.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Red Sauce Pasta', 189)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="mix sauce.jpeg" alt="Mix Sauce Pasta">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Mix Sauce Pasta</h3>
+            <div class="price">₹219</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Perfect blend of red and white sauce with mixed vegetables.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Mix Sauce Pasta', 219)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="chicken pasta.jpeg" alt="Chicken Pasta">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Pasta</h3>
+            <div class="price">₹249</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Creamy pasta tossed with tender chicken pieces and aromatic herbs.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Pasta', 249)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+    <!-- SANDWICHES -->
+    <section class="category" id="sandwich">
+      <h2>Sandwiches</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="grilled sandwich.jpg" alt="Grilled Veg Sandwich">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Grilled Veg Sandwich</h3>
+            <div class="price">₹119</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Grilled bread with fresh vegetables, butter, and mild spices.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Grilled Veg Sandwich', 119)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="cheese sandwich.jpg" alt="Cheese Sandwich">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Cheese Sandwich</h3>
+            <div class="price">₹139</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Melted cheese layered between buttered bread, toasted to perfection.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Cheese Sandwich', 139)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="paneer sandwich.jpg" alt="Paneer Sandwich">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Paneer Sandwich</h3>
+            <div class="price">₹159</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Spiced paneer cubes with onion and capsicum in soft toasted bread.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Paneer Sandwich', 159)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="chicken sandwich.jpg" alt="Chicken Sandwich">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Sandwich</h3>
+            <div class="price">₹179</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Shredded chicken and egg with mayo and fresh lettuce in toasted bread.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Sandwich', 179)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+    <!-- TACOS -->
+    <section class="category" id="taco">
+      <h2>Tacos</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Veg taco.jpg" alt="Veg Taco">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Veg Taco</h3>
+            <div class="price">₹149</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Crunchy taco shell filled with fresh mixed vegetables and tangy sauce.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Veg Taco', 149)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="cheese taco.jpg" alt="Cheese Taco">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Cheese Taco</h3>
+            <div class="price">₹169</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Soft taco filled with veggies and melted cheese for a cheesy delight.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Cheese Taco', 169)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Paneer taco.jpg" alt="Paneer Taco">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Paneer Taco</h3>
+            <div class="price">₹179</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Spiced paneer cubes with onion and special spicy sauce inside taco shell.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Paneer Taco', 179)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Chicken taco.jpg" alt="Chicken Taco">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Taco</h3>
+            <div class="price">₹199</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Crunchy taco filled with chicken, salsa, and melted cheese.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Taco', 199)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+
+    <!-- SIDES -->
+    <section class="category" id="sides">
+      <h2>Sides</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Gaelic bread.jpg" alt="Garlic Bread">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Garlic Bread</h3>
+            <div class="price">₹99</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Buttered bread with garlic and aromatic herbs, toasted to perfection.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Garlic Bread', 99)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="French freis.jpg" alt="French Fries">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>French Fries</h3>
+            <div class="price">₹109</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Crispy golden potato fries, lightly salted.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('French Fries', 109)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Cheese balls.jpg" alt="Cheese Balls">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Cheese Balls</h3>
+            <div class="price">₹129</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Crunchy fried balls filled with melted cheese.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Cheese Balls', 129)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Potato wedges.jpg" alt=" Wedges">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Potato Wedges</h3>
+            <div class="price">₹119</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Spiced potato wedges, baked or fried to a golden crisp.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Potato Wedges', 119)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Chicken nuggets.jpg" alt="Chicken Nuggets">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chicken Nuggets</h3>
+            <div class="price">₹139</div>
+          </div>
+          <div class="tag">🔴 Non-Veg</div>
+          <div class="description">
+            Crispy chicken nuggets, perfect as a snack or starter.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chicken Nuggets', 139)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+    <!-- DRINKS -->
+    <section class="category" id="drinks">
+      <h2>Drinks</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Coke.jpg" alt="Coke">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Coke</h3>
+            <div class="price">₹49</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Chilled carbonated soft drink, refreshing and fizzy.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Coke', 49)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Chocolate milkshake.jpg" alt="Chocolate Milkshake">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chocolate Milkshake</h3>
+            <div class="price">₹99</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Creamy milkshake made with milk, chocolate syrup, and ice cream.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chocolate Milkshake', 119)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Strawberry Milkshake.jpg" alt="Strawberry Milkshake">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Strawberry Milkshake</h3>
+            <div class="price">₹99</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Fresh strawberry flavored milkshake, smooth and creamy.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Strawberry Milkshake', 99)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Boba Tea.jpg" alt="Boba Tea">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Boba Tea</h3>
+            <div class="price">₹129</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Sweet milk tea with chewy tapioca pearls.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Boba Tea', 129)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Hot coffee.jpg" alt="Hot Coffee">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Hot Coffee</h3>
+            <div class="price">₹79</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Freshly brewed hot coffee, aromatic and energizing.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Hot Coffee', 79)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Cold Coffee.jpg" alt="Cold Coffee">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Cold Coffee</h3>
+            <div class="price">₹99</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Chilled coffee mixed with milk and ice, refreshing.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Cold Coffee', 99)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+
+    <!-- DESSERTS -->
+    <section class="category" id="desert">
+      <h2>Desserts</h2>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Choco lava cake.jpg" alt="Chocolate Lava Cake">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Chocolate Lava Cake</h3>
+            <div class="price">₹129</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Warm chocolate cake with a molten chocolate center.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Chocolate Lava Cake', 129)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Brownie.jpg" alt="Brownie">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Brownie</h3>
+            <div class="price">₹119</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Fudgy and rich chocolate brownie, soft and delightful.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Brownie', 119)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Ice cream.jpg" alt="Ice Cream">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Ice Cream</h3>
+            <div class="price">₹89</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Creamy vanilla ice cream, smooth and refreshing.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Ice Cream', 89)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-image">
+          <img src="Choco Pastry.jpg" alt="Choco Pastry">
+        </div>
+        <div class="menu-details">
+          <div class="menu-title">
+            <h3>Choco Pastry</h3>
+            <div class="price">₹109</div>
+          </div>
+          <div class="tag">🟢 Veg</div>
+          <div class="description">
+            Soft chocolate pastry slice, perfect for dessert lovers.
+          </div>
+        </div>
+        <button class="add-btn" onclick="addToCart('Choco Pastry', 109)">
+          Add to Cart
+        </button>
+      </div>
+
+    </section>
+  </div>
+  <button id="backToTop" title="Back to top">⬆</button>
+
+  <script>
+    function addToCart(name, price) {
+
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      // 🔥 Get image automatically from clicked button
+      let button = event.target;
+      let menuItem = button.closest(".menu-item");
+      let imageSrc = menuItem.querySelector("img").getAttribute("src");
+
+      let existingItem = cart.find(item => item.itemName === name);
+
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({
+          itemName: name,
+          itemPrice: price,
+          quantity: 1,
+          image: imageSrc   // ✅ IMAGE SAVED HERE
+        });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(name + " added to cart!");
+    }
+
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+  <div class="section-divider">
+    <span>• • • • • • • • • • • • • • •</span>
+  </div>
+
+  <section class="address-section">
+    <h2>Contact & Address</h2>
+
+    <address class="address-card">
+      <p class="brand-name">Quick Bite</p>
+
+      <p>
+        📍 <span>Near City Center, Main Road,<br>
+          Your City, India</span>
+      </p>
+
+      <p>
+        📞 <a href="tel:+9198326248535">+91 9326248535</a>
+      </p>
+
+      <p>
+        ✉ <a href="mailto:support4quickbite4u@gmail.com">
+          support4quickbite4u@gmail.com
+        </a>
+      </p>
+
+      <p class="timing">
+        🕒 Open Daily: 24x7
+      </p>
+    </address>
+  </section>
+
+</body>
+
+</html>
